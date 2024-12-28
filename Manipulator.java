@@ -16,6 +16,7 @@ public class Manipulator
     {
         Manipulator manipulator = new Manipulator();
         manipulator.start();
+        System.out.println("This is the wild west or something.");
     }
 
     public void start()
