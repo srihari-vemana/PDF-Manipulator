@@ -34,6 +34,16 @@ public class Validator
         return inRange;
     }
 
+    public boolean isValidMenuOption(char userInput)
+    {
+        boolean isValidMenuOption = false;
+        if (userInput == '1' || userInput == '2' || userInput == '3')
+        {
+            isValidMenuOption = true;
+        }
+        return isValidMenuOption;
+    }
+
     /**
     * Checks if a given Player object is a valid player or not. 
     *

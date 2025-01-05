@@ -18,6 +18,24 @@ public class Input
     {
         this.console = new Scanner(System.in);
     }
+    
+    /**
+     * Accepts a Character input from the user and returns it.
+     *
+     * @param   prompt  String to be displayed to the user to prompt an input.
+     *
+     * @return  a character that was taken as input from user.
+     */
+    public char acceptCharInput(String prompt)
+    {
+        System.out.print(prompt);
+        String inputString = this.console.nextLine().trim();
+        if (inputString.length() != 0)
+        {
+            return inputString.charAt(0);
+        }
+        return ' ';
+    }
 
     /**
      * Accepts a String input from the user and returns it.
